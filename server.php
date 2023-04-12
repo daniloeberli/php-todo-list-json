@@ -1,10 +1,11 @@
 <?php
 
-$str = file_get_contents('task.json');
+$str = file_get_contents(__DIR__ . '/task.json');
 
 $tasks = json_decode($str, true);
 
 
-var_dump($tasks);
+header("Content-Type: application/json");
+echo json_encode($tasks);
 
 ?>
