@@ -30,8 +30,8 @@
             <div class="row py-3">
                 <div class="col-md-6 mx-auto">
                     <div class="input-group mb-4">
-                        <input type="text" class="form-control" placeholder="Inserisci nuovo toDo">
-                        <button class="btn btn-outline-dark" type="button">Aggiungi</button>
+                        <input v-model="newTask" type="text" class="form-control" placeholder="Inserisci nuovo toDo">
+                        <button @click="addTask" class="btn btn-outline-dark" type="button">Aggiungi</button>
                     </div>
                 </div>
             </div>
